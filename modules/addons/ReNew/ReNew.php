@@ -80,15 +80,7 @@ if (!function_exists('ReNew_deactivate')) {
 if (!function_exists('ReNew_clientarea')) {
 	function ReNew_clientarea($vars) {
 		
-	    // NeWorld Manager 开始
-	    try {
-	        // 实例化模块类
-	        $addons = new NeWorld\Addons('ReNew');
-	
-	        // 授权返回内容（一个数组，包含有 code/time/info 三个键，分别代表“额外代码”、“验证时间”、“授权信息”）
-	        $addons = $_SESSION['NeWorld'][$addons->license];
-	        // 返回信息
-	        // NeWorld Manager 结束
+
 	        
 	        if ( function_exists('bcmul') ) {
 		        $results["alert"] = '请安装 bcmul 组件';
@@ -331,18 +323,6 @@ if (!function_exists('ReNew_clientarea')) {
 	            }
 	        }
 	        $results['amount'] = formatCurrency( $products->amount ); // 续费金额
-	
-	    // NeWorld Manager 开始
-	    }
-	    catch (Exception $e)
-	    {
-	        $templatefile = 'tips';
-	        $results = [
-	            'status' 	=> 'danger',
-	            'info' 		=> '<i class="alico icon-warning-2"></i> '.$e->getMessage(),
-	        ];
-	    }
-	    // NeWorld Manager 结束
 	
 	    unset($_POST);
 	
