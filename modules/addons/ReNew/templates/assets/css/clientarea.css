@@ -1,0 +1,216 @@
+ul,li {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.clearfix:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.slider-date {
+	vertical-align: middle;
+	position: relative;
+}
+.slider-date .slider-bg li {
+	position: relative;
+	float: left;
+	width: 8.4%;
+	margin-left: -1px;
+	border: 1px solid #DDD;
+	font-size: 12px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 100;
+	transition: all .5s;
+}
+.slider-date .slider-bg li:hover {
+	z-index: 101;
+	border-color: #11C1DF;
+}
+.slider-date .slider-bg .active {
+	color: #FFF;
+	z-index: 101;
+	border-color: #11C1DF;
+	background-color: #11C1DF;
+}
+.slider-date .slider-bg .active.before {
+	text-indent: -2em;
+}
+.slider-date .slider-bg .active.before:before {
+	content: '个月';
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #fff;
+}
+.bk-order-renew-new-time {
+    margin-top: 10px;
+    color: #999;
+}
+.bk-order-time-color {
+    color: #f60;
+}
+.total {
+	line-height: 80px
+}
+.total .balance {
+	color: #f60;
+	font-size: 30px;
+}
+.btn-bk {
+	height: 40px;
+    line-height: 40px;
+    width: 155px;
+    background: #ff8a00;
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+    border: 0 none; 
+    border-radius: 0px;
+}
+.btn-bk:hover {
+    color: #fff;
+    background-color: #ffa133;
+}
+.panel-body {
+	color: #969696;
+	padding: 0;
+	border-top: 1px solid #e5e4e3;
+}
+.panel-body .item.short {
+    width: 50%;
+}
+.panel-body .item.short.right {
+    border-left: 1px solid #f2f3f4;
+    margin-left: -1px;
+}
+.panel-body .item {
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f3f4;
+}
+.panel-body .label {
+    float: left;
+    display: block;
+    width: 90px;
+    color: #969696;
+	font-weight: 400;
+    text-align: right;
+    font-size: 100%;
+    padding: 0;
+    line-height: 30px;
+}
+.panel-body .contents {
+	color: #363636;
+    padding-left: 90pt;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+	clear: both;
+    content: " ";
+    display: table;
+}
+
+h5 {
+	color: #333;
+	font-weight: 600;
+	font-size: 14px;
+	margin: 16px 0px 4px;
+}
+.text-muted {
+    color: #999;
+}
+.push-t-30 {
+	padding-top: 30px;
+}
+.push-t-100 {
+	padding-top: 100px;
+}
+.text-warning {
+    color: #F90;
+}
+.margin-top-2 {
+    margin-top: 10px;
+}
+.margin-top-3 {
+    margin-top: 24px;
+}
+.modal-content {
+	border-color: transparent;
+	border-radius: 5px;
+    box-shadow: 0 5px 12px rgba(15,27,39,.4);
+}
+.modal-dialog {
+	margin-top: 100px;
+}
+.modal-body {
+	padding: 30px;
+	font-size: 12px;
+}
+.modal-body h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.modal-backdrop.in {
+	opacity: .85;
+	background-color: #1A3547;
+}
+.payment-f2falipay,
+.payment-alipay {
+    background-image: url('../img/alipay.svg');
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.payment-weixinpay,
+.payment-WePay {
+    background-image: url('../img/wepay.svg');
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.payment-paypal {
+    background-image: url('../img/paypal.svg');
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+@media screen and (max-width: 768px) {
+	.panel-body .item.short {
+		width: 100%;
+	}
+	.panel-body .item.short.right {
+	    border-left: 0 none;
+	    margin-left: 0;
+	}
+	.panel-body .contents {
+	    padding-left: 80pt;
+	}
+	.slider-date .slider-bg li {
+	    width: 50%;
+	    margin-top: -1px;
+	}
+	.slider-date .slider-bg .active.before {
+	    text-indent: 0em;
+	}
+	.slider-date .slider-bg .active.before:before {
+		right: 15%;
+	}
+}
